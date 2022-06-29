@@ -1,0 +1,17 @@
+.wish-container {
+   margin-left: 13%;
+    .wishes {
+        margin:20px;
+        .wish-icon {
+            padding: 5px 5px 5px 0px;
+        }
+    }
+    .wishes:hover {
+        border-radius: 10px;
+        padding:5px;
+        width:25%;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        transform: scale(1.1);
+        transition-duration: 0.25s;
+    }
+}

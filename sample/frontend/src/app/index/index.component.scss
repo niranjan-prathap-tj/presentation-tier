@@ -1,0 +1,16 @@
+.message-container {
+    .messages {
+        margin:20px;
+        .comment-icon {
+            padding:5px 5px 5px 0px;
+        }
+    }
+    .messages:hover{
+        border-radius: 10px;
+        padding:5px;
+        width:25%;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        transform: scale(1.1);
+        transition-duration: 0.25s;
+    }
+}
