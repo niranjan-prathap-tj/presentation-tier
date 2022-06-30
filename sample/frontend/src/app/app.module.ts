@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { HttpClientModule } from '@angular/common/http';
 import { WishesComponent } from './wishes/wishes.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
-    WishesComponent
+    WishesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

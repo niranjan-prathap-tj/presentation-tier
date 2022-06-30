@@ -9,7 +9,7 @@ import { DemoService } from './demo.service';
 export class AppComponent {
   health:any;
   constructor(demo:DemoService) {
-    demo.getHealthStatus().subscribe(data=>{
+   demo.getHealthStatus().subscribe(data=>{
       this.health = data;
       console.log(data);
     })
