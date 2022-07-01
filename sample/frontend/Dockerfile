@@ -28,4 +28,4 @@ COPY --from=build /src/app/dist/sample /usr/share/nginx/html
 # COPY /dist/sample /usr/share/nginx/html
 
 # Expose port 80
-EXPOSE 8080
+EXPOSE 80
