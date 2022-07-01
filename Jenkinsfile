@@ -26,6 +26,7 @@ pipeline {
                         sudo -H -u i21177 bash -c 'kubectl delete deployment presentation-tier-deployment'
                     else
                         echo Deploying Presentation Layer
+                    fi
                 '''
                 sh ''' sudo -H -u i21177 bash -c 'kubectl apply -f presentationTierDeployment.yaml' '''
             }
