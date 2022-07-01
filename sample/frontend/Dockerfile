@@ -5,6 +5,8 @@
 # Use official node image as the base image
 FROM node:latest as build
 
+RUN mkdir -p /src/app
+
 # Set the working directory
 WORKDIR /src/app
 
