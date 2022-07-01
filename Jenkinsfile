@@ -19,16 +19,7 @@ pipeline {
         }
         stage ('Deploy') {
             steps {
-                sh ''' sudo -H -u i21177 bash -c 'kubectl get deployments | grep presentation-tier-deployment' '''
-                sh ''' isDeploymentPresent=$(echo $?) 
-                    if [ $isDeploymentPresent -eq 0]
-                    then '''
-                sh ''' sudo -H -u i21177 bash -c 'kubectl delete deployment presentation-tier-deployment' ''' 
-                sh '''
-                    else
-                        echo Deploying Presentation Layer
-                    fi
-                '''
+                sh ''' sudo -H -u i21177 bash -c 'kubectl delete deployment presentation-tier-deployment 2> /dev/null' '''
                 sh ''' sudo -H -u i21177 bash -c 'kubectl apply -f presentationTierDeployment.yaml' '''
             }
         }
